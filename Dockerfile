@@ -1,9 +1,10 @@
-FROM centos:8
+from centos:8
 
-RUN yum install python36 -y
-RUN pip3 install joblib && pip3 install scikit-learn
+run yum install python3 -y
+run pip3 install scikit-learn
+run pip3 install pandas
 
-COPY 2nd.pk1 /
-COPY mycode.py /
+copy marks.py /
+copy zz.z1 /
 
-CMD python36 mycode.py
+cmd python3 zz.z1
